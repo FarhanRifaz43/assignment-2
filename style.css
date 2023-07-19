@@ -1,0 +1,130 @@
+/* common shared styles */
+:root {
+    --pink: #fb148b;
+    --black: #3C354F;
+}
+
+* {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.gamer {
+    color: var(--pink);
+}
+
+.title-gradient{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    border-radius: 48px;
+    background: var(--pink);
+    border: 0;
+    padding: .7rem 1.2rem;
+    color: white;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    min-height: 5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    gap: .5rem;
+    max-width: fit-content;
+}
+
+.logo img {
+    max-width: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+nav ul li div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--black);
+    border: 0;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    height: 2.4rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+/* navbar ends */
+/* banner start */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-container h4{
+color: #0B0223;
+font-size: 3rem;
+font-weight: 600;
+text-align: center
+}
+.banner-container h3{
+font-size: 6rem;
+font-weight: 800;
+text-align: center
+}
+.banner-container ul{
+    list-style:circle;
+    color: #534C64;
+    margin: 1rem 0;
+}
+.banner-container ul li{
+    margin: .5rem 0;
+}
+.btn-container{
+    margin-left: 2rem;
+}
+.banner-img img{
+    max-width: 40rem;
+}
+/* banner end */
+/* online games start */
+.cards-container{
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    margin: 2rem auto;
+}
+.card{
+    max-width: 12rem;
+}
+.card img{
+    max-width: 12rem;
+}
+.card p{
+color: #534C64;
+font-size: .8rem;
+font-weight: 500;
+margin: .5rem 0;
+}
